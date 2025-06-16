@@ -1,0 +1,170 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Style du corps */
+body {
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header (accueil) */
+header {
+    background: #121212;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #007bff;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+}
+
+/* Bouton dans le header */
+header .button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+header .button:hover {
+    background-color: #238dff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Sections génériques */
+section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+/* Grille pour compétences et projets */
+.skills, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills div, .projects div {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+/* Bouton secondaire (hors header) */
+.button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #238dff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+}
+
+/* Animations scroll */
+/* Animations scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Animation H1 */
+@keyframes fadeInDrop {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header h1 {
+    animation: fadeInDrop 1s ease-out;
+  }
+    
+  nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    background-color: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  nav a:hover {
+    background-color: #007bff;
+    color: #121212;
+    transform: scale(1.05);
+  }
+  
+  /* Style global des boutons */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #238dff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+    
+  
